@@ -7,7 +7,8 @@
 
 	var test = function(name){ 
 		var hash = sha1.create();
-		hash.update(name);
+		nameFormatte = name.charAt(0).toUpperCase() + name.substring(1).toLowerCase()
+		hash.update(nameFormatte);
 		if(hash==secret){
 			alert("Ouai !"); 
 		}
