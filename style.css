@@ -1,0 +1,21 @@
+body {
+  margin:0;
+  padding:0;
+  background-image: url("ressources/echo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  height: 350px;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  background:transparent;
+}
+
+.form-group{
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+
+}

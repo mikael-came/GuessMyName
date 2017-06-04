@@ -2,26 +2,28 @@
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script data-main="scripts/main" src="scripts/require.js"></script>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
 	<title>GuessMyName</title>
-	 
+
 </head>
 <body>
-	<div class="container">
+
+	<div class="container superbg">
 		<div class="jumbotron">
-			<h1>guessMyName</h1>
-			<p>Do you think, you can ?</p>
+			<h1>Trouve mon futur prénom</h1>
+			<p>Tu penses pouvoir y arriver ?</p>
 		</div>
-		
-	
-		
-			<div class="form-group">
-				<label for="name">Name:</label>
-				<input type="text" class="form-control" id="name">
+		<form class="form-horizontal">
+
+			<div class="form-group ">
+				<label class="col-sm-2 control-label"for="name">Prénom : </label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="name">
+					<button  class="btn btn-default btn-block" onclick="test(document.getElementById('name').value)">Verifier ce prénom</button>
+				</div>
 			</div>
-			<button type="submit" class="btn btn-default" onclick="test(document.getElementById('name').value)">Submit</button>
-		
+		</form>
 	</div>
 </body>
 
