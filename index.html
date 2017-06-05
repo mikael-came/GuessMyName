@@ -18,11 +18,13 @@
 <body>
 
 	<div class="container superbg">
+		
 		<div class="jumbotron">
 			<h1>Trouve mon futur prénom</h1>
 			<h1 id="solution"></h1>
 			<p>Tu penses pouvoir y arriver ?</p>
 		</div>
+
 		<form class="form-horizontal">
 
 			<div class="form-group white">
@@ -34,15 +36,16 @@
 					>Vérifier ce prénom</button>
 				</div>
 			</div>
+			</form>
 
-			<div id="tentatives" style="display:none">
-				<label class="col-sm-2 control-label white" for="name">Tentatives : </label>
-
-				<ul  id="listeTentatives" class="list-group">
-
-				</ul>
-			</div>
-		</form>
+			<form class="form-horizontal">
+				<div id= "tentatives" class="form-group white" style="display:none">
+					<label class = "col-sm-2 control-label white" for="name">Tentatives : </label>
+					<div class = "col-sm-10">
+						<ul id="listeTentatives" class="list-group"></ul>
+					</div>
+				</div>
+			</form>
 	</div>
 </body>
 
