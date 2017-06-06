@@ -1,7 +1,8 @@
 
 	// Tu crois vraiment que je balancerai le prénom de notre fille, comme ça ...
 	var secret = "7f481125cb09c0f7f91044996b90b7b7d29104d7";
-	var username ='anonymous';
+	var username = 'Anonymous';
+	
 	var messagesError = ["Nope.", "Désolé ce n'est pas ca.",
 	"Retente ta chance.", "Quand même pas !",
 	"Oula... non pas du tout !", "Non, ce n'est pas ça."
@@ -67,3 +68,16 @@
 			console.log('callBack, enregistrement done');
 		};
 	};
+	
+	document.getElementById('username').value = username;
+	document.getElementById("username").addEventListener('change', function() {
+			 username = this.value;
+	}, false);
+		
+	document.getElementById("username").addEventListener('focus', function() {
+			 if(this.value === "Anonymous"){
+				username = "";
+				this.value="";
+			 }
+			 
+	}, false);
