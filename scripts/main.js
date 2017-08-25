@@ -20,7 +20,7 @@
 			nameFormatte = name.charAt(0).toUpperCase() + name.substring(1).toLowerCase()
 			hash.update(nameFormatte);
 
-			if(hash === secret){
+			if(hash.hex() === secret){
 				alert("Oui ! C'est la bonne réponse!");
 			}
 			else{
